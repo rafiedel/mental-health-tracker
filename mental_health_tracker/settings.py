@@ -23,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_ib0dr#@vgl37l^6xf5&*vdcr7#&9&h-o3_a7oqg&7c=l$_9i!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ...
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "rafie-asadel-mentalhealthtracker.pbp.cs.ui.ac.id. "]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1","http://rafie-asadel-mentalhealthtracker.pbp.cs.ui.ac.id/", "https://rafie-asadel-mentalhealthtracker.pbp.cs.ui.ac.id/"]
 ...
 
 
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'mental_health_tracker.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
