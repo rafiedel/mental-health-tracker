@@ -28,7 +28,7 @@ PRODUCTION = os.getenv("PRODUCTION", False)
 DEBUG = not PRODUCTION
 
 ...
-ALLOWED_HOSTS = ["localhost", "127.0.0.1","http://rafie-asadel-mentalhealthtracker.pbp.cs.ui.ac.id/", "https://rafie-asadel-mentalhealthtracker.pbp.cs.ui.ac.id/"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", '10.0.2.2', "http://rafie-asadel-mentalhealthtracker.pbp.cs.ui.ac.id/", "https://rafie-asadel-mentalhealthtracker.pbp.cs.ui.ac.id/"]
 ...
 
 
